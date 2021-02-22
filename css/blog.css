@@ -1,0 +1,123 @@
+/* Universal */
+
+body {
+    font-family: sans-serif, serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+/* Navbar */
+
+.navbar {
+    background: whitesmoke;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: none;
+    padding: 10px 0;
+}
+
+.nav-item:hover {
+    color: darkgray;
+}
+
+.nav-item {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar>* {
+    text-transform: uppercase;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.deslogo img {
+    position: absolute;
+    top: 0;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    background: white;
+    height: 10vw;
+    max-height: 120px;
+    box-sizing: border-box;
+}
+
+.deslogo:hover img {
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.moblogo {
+    height: 8vh;
+}
+
+.space {
+    height: calc(10vw - 70px);
+}
+
+@media only screen and (max-width: 950px) {
+    .deslogo {
+        display: none;
+    }
+
+    .space {
+        display: none;
+    }
+
+    .nav-item {
+        font-size: .9em;
+    }
+
+    .header {
+        display: flex;
+    }
+}
+
+/* Footer */
+
+.footer {
+    background: whitesmoke;
+    text-align: center;
+}
+
+.foot-space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+    filter: brightness(200%) grayscale(100%) opacity(0.7);
+}
+
+.foot-logo {
+    height: 8vh;
+}
