@@ -118,11 +118,44 @@ a:hover {
     width: 100%;
 }
 
+.header {
+    display: none;
+}
+
+.header img {
+    padding: 5px;
+    height: 100%;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 700px) {
 
+    .header {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .header {
+        height: 50px;
+    }
+
+    .navbar {
+        height: 40px;
+    }
+
     .nav-icon {
         display: none;
+    }
+
+    .deslogo {
+        display: none;
+    }
+
+    .nav-item,
+    .footer {
+        font-size: x-small;
+        padding: 0 5px;
     }
 
     .navbar {
