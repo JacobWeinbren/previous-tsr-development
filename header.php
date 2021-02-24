@@ -12,20 +12,25 @@
 
 <body>
 
-	<div class="content">
-		<a class="header">
-			<img class="moblogo" src="<?php echo get_bloginfo('template_url') ?>/images/logo.png"/>
-		</a>
-
+	<div class="fullnav">
 		<nav class="navbar">
-			<a class="nav-item" href="realities">Realities</a>
-			<a class="nav-item" href="posibilities">Posibilities</a>
-			<a href="#" class="nav-item deslogo">
-				<img src="<?php echo get_bloginfo('template_url') ?>/images/logo.png"/>
+			<a href="#" class="nav-item">
+				<img class="deslogo" src="<?php echo get_bloginfo('template_url') ?>/images/logo.png"/>
+				<img class="moblogo" src="<?php echo get_bloginfo('template_url') ?>/images/moblogo.png"/>
 			</a>
-			<a class="nav-item" href="posibilities">Podcast</a>
-			<a class="nav-item" href="posibilities">Newsletter</a>
+			<a class="nav-item" href="realities"><b>Realities</b></a>
+			<a class="nav-item" href="posibilities"><b>Posibilities</b></a>
+			<a class="nav-item" href="posibilities"><b>Podcast</b></a>
+			<a class="nav-item" href="posibilities"><b>Newsletter</b></a>
+			<a class="nav-item nav-icon" href="facebook"><i class="fab fa-facebook"></i>
+			</a>
+			<a class="nav-item nav-icon" href="facebook"><i class="fab fa-twitter"></i>
+			</a>
+			<a class="nav-item nav-icon" href="facebook"><i class="fab fa-spotify"></i>
+			</a>
+			<a class="nav-item nav-icon" id="search" href="facebook"><i class="fas fa-search"></i>
+			</a>
 		</nav>
-
-		<div class="space">
-		</div>
+	</div>
+	
+	<div class="content">

@@ -1,13 +1,13 @@
 </div>
-<footer class="footer">
-	<div class="foot-space">
-		<img class="foot-logo" src="<?php echo get_bloginfo('template_url') ?>/images/logo.png"/>
-	</div>
-	<br>
-	<a href="#">About</a> • <a href="#">Contact</a> • <a href="#">Privacy Policy</a>
-	<p><a href="https://github.com/JacobWeinbren/miliband/">'Miliband' Theme</a> • <a href="https://en.wikipedia.org/wiki/MIT_License">MIT License</a></p>
-	<p>Content © 2021 <a href="#">The Social Review</a>. All rights reserved.</p>
-</footer>
+<div class='fullfoot'>
+	<footer class="footer">
+		<ul class='foot-text'>
+			<li><a href="#">About</a> • <a href="#">Contact</a> • <a href="#">GDPR Statement</a></li>
+			<li><a href="https://github.com/JacobWeinbren/miliband/">'Miliband' Theme</a> • <a href="https://en.wikipedia.org/wiki/MIT_License">MIT License</a></li>
+			<li>© 2021 <a href="#">TSR</a>. All Rights Reserved.</li>
+		</ul>
+	</footer>
+</div>
 <?php wp_footer(); ?>
 </body>
 </html>
