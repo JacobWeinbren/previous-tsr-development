@@ -1,5 +1,5 @@
 </div>
-<div class='fullfoot'>
+<div class='full-foot'>
 	<footer class="footer">
 		<ul class='foot-text'>
 			<li><a href="#">About</a> • <a href="#">Contact</a> • <a href="#">GDPR Statement</a></li>

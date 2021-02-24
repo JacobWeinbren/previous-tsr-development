@@ -50,7 +50,7 @@ a:hover {
     margin: 0 auto;
     flex-wrap: nowrap;
     height: 50px;
-    max-width: 1200px;
+    max-width: 700px;
 }
 
 .nav-item:hover {
@@ -82,18 +82,12 @@ a:hover {
 }
 
 .deslogo {
-    margin: 0 10px;
+    margin: 0;
     margin-left: 0;
     padding: 0;
 }
 
-.deslogo {
-    padding: 5px;
-    height: 100%;
-}
-
-.moblogo {
-    display: none;
+.deslogo img {
     padding: 5px;
     height: 100%;
 }
@@ -102,18 +96,10 @@ a:hover {
 
 .footer {
     background: whitesmoke;
-    text-align: left;
     font-size: small;
-    display: flex;
-    max-width: 700px;
     margin: 0 auto;
-    flex-wrap: wrap;
     display: flex;
     justify-content: center;
-}
-
-.foot-space {
-    filter: brightness(200%) grayscale(100%) opacity(0.7);
 }
 
 .foot-text {
@@ -127,22 +113,13 @@ a:hover {
     line-height: 1.5em;
 }
 
-.fullfoot {
+.full-foot {
     background: whitesmoke;
     width: 100%;
 }
 
 /* Media Queries */
-@media only screen and (max-width: 800px) {
-
-    /* Header */
-    .deslogo {
-        display: none;
-    }
-
-    .moblogo {
-        display: flex;
-    }
+@media only screen and (max-width: 700px) {
 
     .nav-icon {
         display: none;

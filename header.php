@@ -14,9 +14,8 @@
 
 	<div class="fullnav">
 		<nav class="navbar">
-			<a href="#" class="nav-item">
-				<img class="deslogo" src="<?php echo get_bloginfo('template_url') ?>/images/logo.png"/>
-				<img class="moblogo" src="<?php echo get_bloginfo('template_url') ?>/images/moblogo.png"/>
+			<a href="#" class="nav-item deslogo">
+				<img src="<?php echo get_bloginfo('template_url') ?>/images/logo.png"/>
 			</a>
 			<a class="nav-item" href="realities"><b>Realities</b></a>
 			<a class="nav-item" href="posibilities"><b>Posibilities</b></a>
