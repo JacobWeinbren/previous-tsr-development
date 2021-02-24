@@ -50,7 +50,7 @@ a:hover {
     margin: 0 auto;
     flex-wrap: nowrap;
     height: 50px;
-    max-width: 700px;
+    max-width: 1000px;
 }
 
 .nav-item:hover {
@@ -124,7 +124,6 @@ a:hover {
 
 .header img {
     padding: 5px;
-    height: 100%;
 }
 
 /* Media Queries */
@@ -136,7 +135,7 @@ a:hover {
         align-content: center;
     }
 
-    .header {
+    .header img {
         height: 50px;
     }
 
