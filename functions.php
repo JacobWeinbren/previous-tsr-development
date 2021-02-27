@@ -3,6 +3,7 @@
 function miliband_scripts() {
 	wp_enqueue_style( 'blog', get_template_directory_uri() . '/css/blog.css' );
 	wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.15.2/css/all.css' );
+	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js');
 }
 
 function add_field( $form_fields, $post ) {
