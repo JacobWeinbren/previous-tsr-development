@@ -1,9 +1,7 @@
 <?php
 
 function miliband_scripts() {
-	wp_enqueue_style( 'bundle', get_template_directory_uri() . '/public/build/bundle.css' );
-	wp_enqueue_style( 'custom', 'https://unpkg.com/carbon-components-svelte@0.29.2/css/white.css' );
-	wp_enqueue_script( 'main', get_template_directory_uri() . '/public/build/bundle.js');
+	wp_enqueue_script( 'code', get_template_directory_uri() . '/dist/main.js');
 }
 
 function add_field( $form_fields, $post ) {

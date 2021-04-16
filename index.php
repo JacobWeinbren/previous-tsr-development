@@ -1,9 +1,3 @@
-<!DOCTYPE html>                                                                                                                             
-<html <?php language_attributes(); ?>>                                                                                                      
-<head>                                                                                                                                                                                             
-	<?php wp_head(); ?>                                                                                                         
-</head>                                                                                                                             
-<body>                                                                                                                              
-	<?php wp_footer(); ?>                                                                                                                                              
-</body>                                                                                                                             
-</html>   
+<?php get_header(); ?>
+<!--<?php get_template_part( 'content', get_post_format() ); ?>-->
+<?php get_footer(); ?>
