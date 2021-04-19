@@ -1,0 +1,27 @@
+@import 'carbon-components/scss/globals/scss/css--helpers';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/elements/scss/themes/mixins';
+
+$carbon--theme: $carbon--theme--white;
+@include carbon--theme();
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr 5rem;
+}
+
+bx-header {
+	transition-delay: 200ms;
+    transition-timing-function: cubic-bezier(0.2, 0, 0.38, 0.9);
+    transition-duration: 300ms;
+}
+
+$shell-header-bg-01: white;
+$shell-header-text-01: black;
+$shell-header-text-02: black;
