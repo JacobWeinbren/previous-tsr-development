@@ -2,9 +2,7 @@
 
 function miliband_scripts() {
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/dist/main.css');
-	wp_enqueue_script( 'polyfill', get_template_directory_uri() . '/dist/polyfill.js');
-	wp_enqueue_script( 'webcomponent', get_template_directory_uri() . '/node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js');
-	wp_enqueue_script( 'main', get_template_directory_uri() . '/dist/main.js');
+	wp_enqueue_script( 'code', get_template_directory_uri() . '/dist/main.js');
 }
 
 function add_field( $form_fields, $post ) {
@@ -33,6 +31,21 @@ function save_attachment( $attachment_id ) {
 	}
 }
 add_action( 'edit_attachment', 'save_attachment' );
+
+function add_defer_attribute($tag, $handle, $src) {
+	if ( 'miliband_scripts' !== $handle ) {
+		return $tag;
+	}
+	$tag = '<script defer="defer" src="' . esc_url( $src ) . '"></script>';
+	return $tag;
+}
+
 add_action( 'wp_enqueue_scripts', 'miliband_scripts' );
+add_filter( 'script_loader_tag', function ( $tag, $handle ) {
+	if ( 'main' !== $handle )
+		return $tag;
+	return str_replace( ' src', ' defer="defer" src', $tag );
+}, 10, 2 );
+
 add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' );

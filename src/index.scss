@@ -1,63 +1,27 @@
 @import 'carbon-components/scss/globals/scss/css--helpers';
 @import 'carbon-components/scss/globals/scss/vendor/@carbon/elements/scss/themes/mixins';
-@import '@carbon/grid/scss/grid.scss';
-@import '@carbon/colors/scss/colors';
+
+$carbon--theme: $carbon--theme--white;
+@include carbon--theme();
 
 html, body {
 	margin: 0;
 	padding: 0;
 }
 
-header {
+body {
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr 5rem;
+}
+
+bx-header {
 	transition-delay: 200ms;
     transition-timing-function: cubic-bezier(0.2, 0, 0.38, 0.9);
     transition-duration: 300ms;
-    background: white;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    border-bottom: 1px solid $gray-80;
-    user-select: none;
 }
 
-header-name {
-	padding: $spacing-02 $spacing-07 $spacing-02 $spacing-05;
-	height: 100%;
-	display: grid;
-    align-items: center;
-
-	span {
-		color: $red-60;
-	}
-}
-
-header-nav {
-    height: 100%;
-    display: block;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: $spacing-05;
-
-    a {
-        padding: 0 $spacing-05;
-        height: 100%;
-        color: black;
-        display: flex;
-        align-items: center;
-    }
-}
-
-header-nav::before {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    display: block;
-    width: .0625rem;
-    height: $spacing-08;
-    background-color: $gray-80;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    content: "";
-}
+$shell-header-bg-01: white;
+$shell-header-text-01: black;
+$shell-header-text-02: black;
