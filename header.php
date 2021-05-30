@@ -15,12 +15,13 @@
 	<body>
 		<body>
 
-			<tsr-header aria-label="The Social Review">
-				<bx-header-menu-button button-label-active="Close menu" button-label-inactive="Open menu" active="" collapse-mode="responsive" usage-mode=""></bx-header-menu-button>
-				<bx-header-name href="javascript:void 0" prefix="The">Social Review</bx-header-name>
-				<bx-header-nav menu-bar-label="The Social Review">
-					<bx-header-nav-item href="#">Realities</bx-header-nav-item>
-					<bx-header-nav-item href="#">Link 2</bx-header-nav-item>
-					<bx-header-nav-item href="#">Link 3</bx-header-nav-item>
-				</bx-header-nav>
-			</tsr-header>
+			<header aria-label="The Social Review Header">
+				<header-button></header-button>
+				<header-name>The <span>Social</span> Review</header-name>
+				<header-nav>
+					<a>Realities</a>
+					<a>Possibilities</a>
+					<a>Podcast</a>
+					<a>Newsletter</a>
+				</header-nav>
+			</header>
